@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" type="image/png" href="assets/images portfolio/favicon-M.png">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <header>
+            <h1>Mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experiences">Expériences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <label class="toggle-switch">
+                    <input type="checkbox" class="toggle-input">
+                    <span class="toggle-slider"></span>
+                </label>
+            </nav>
+        </header>
+        <main>
+            <div class="center-bar">
+                <section id="home">
+                    <h2>Marco Marques</h2>
+                    <p>Développeur web</p>
+                    <p>25 ans</p>
+                    <img src="assets/images portfolio/IMG_8671.jpg" alt="Image d'accueil" class="home-image">
+                    <a href="assets/images%20portfolio/Marco%20Marques%20(2).pdf" download>Télécharger mon CV</a>
+                </section>
+
+                <section id="about">
+                    <h2>À propos</h2>
+                    <div class="presentation">
+                        <p>Email : <span>marco.marques@epitech.eu</span></p>
+                        <p>Téléphone : <span>06.15.84.11.75</span></p>
+                        <p>Date de naissance : <span>12 juillet 1998</span></p>
+                        <p>Adresse : <span>12 avenue de Bretagne<br>93220 Gagny<br>FRANCE</span></p>
+                        <p>Nationalité : <span>française</span></p><p>Recherche d'alternance Développement web</p>
+                        <p>Bac Es 2016</p> <p>Passionné de sports auto, F1</p>
+                        <div class="social-icons">
+                            <div>
+                                <img src="assets/images portfolio/github.png" alt="GitHub">
+                                <span>Marcoxavier1</span>
+                            </div>
+                            <div>
+                                <img src="assets/images portfolio/instagram.png" alt="Instagram">
+                                <span>marcopxr1</span>
+                            </div>
+                            <div>
+                                <img src="assets/images portfolio/linkedin.png" alt="LinkedIn">
+                                <span>MarcoMarques</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills">
+                    <h2>Compétences</h2>
+                    <div class="skills-container">
+                        <div>
+                            <div class="skills-icons">
+                                <img src="assets/images portfolio/css.png" alt="CSS">
+                                <img src="assets/images portfolio/html.png" alt="HTML">
+                                <img src="assets/images portfolio/js.png" alt="JavaScript">
+                                <img src="assets/images portfolio/mysql.png" alt="MySQL">
+                                <img src="assets/images portfolio/php.png" alt="PHP">
+                                <img src="assets/images portfolio/react.png" alt="React">
+                            </div>
+                            <p>Je suis un jeune étudiant en Développement web à Epitech web@camedie Paris, ma formation se base sur des projets solo ou en équipe. Nous étudions autant le front que le back end donc nous touchons à une multitude de langages de programmation.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <h2>Projets</h2>
+                    <div class="project-container">
+                        <div class="project">
+                            <img src="assets/images portfolio/twitter.png" alt="My_Twitter">
+                            <div class="project-info">
+                                <h3>My_Twitter</h3>
+                                <p>Dans ce projet de groupe nous avons réalisé un site web en se basant sur le vrai Twitter avec les mêmes fonctionnalités, pour cela nous avons dû utiliser du html , css, javascript, PHP, mysql.</p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="assets/images portfolio/4to4.png" alt="Puissance 4">
+                            <div class="project-info">
+                                <h3>Puissance 4</h3>
+                                <p>Dans ce projet solo j'ai dû réaliser un puissance 4 en html css javascript Jquery, il m'a permis d'acquérir des compétences en algorithmie ainsi que dans chacun des langages cités précédemment.</p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="assets/images portfolio/H5ai.png" alt="My_H5ai">
+                            <div class="project-info">
+                                <h3>My_H5ai</h3>
+                                <p>Ce projet solo était en 100% PHP, j'ai dû réaliser une sorte d'explorateur de fichiers navigables en récursivité avec chemin d'accès, il m'a permis d'acquérir de nombreuses connaissances en PHP ainsi que sur la récursivité.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h2>Contactez-moi</h2>
+                    <form action="portfolio-contact.php" method="post">
+                        <label for="email">Votre adresse e-mail:</label><br>
+                        <input type="email" id="email" name="email" class="email-input"><br>
+                        <label for="message">Votre message:</label><br>
+                        <textarea id="message" name="message" rows="8" cols="87"></textarea><br>
+                        <input type="submit" value="Envoyer">
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>
